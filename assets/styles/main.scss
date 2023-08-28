@@ -1,0 +1,18 @@
+div{
+    float: left;
+}
+@mixin box($color, $width, $height,$margin1,$margin2,$margin3, $margin4){
+    width: $width;
+    height: $height;
+    background-color: $color;
+    margin: $margin1,$margin2,$margin3, $margin4;
+}
+#first{
+    @include box(red,150px,150px,10px,20px,30px,40px);
+}
+#second{
+    @include box(green,200px,200px,10px,15px,25px,30px);
+}
+#third{
+    @include box(blue,100px,100px,40px,25px,30px,50px);
+}
